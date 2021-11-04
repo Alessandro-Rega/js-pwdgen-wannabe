@@ -19,11 +19,13 @@ document.getElementById('colore').innerHTML = colore;
 
 let password = nome + cognome + colore + "21";
 
+// controllo se l'utente ha inserito i dati richiesti
 if(nome && cognome && colore){
     // modifico l'html con la password dell'utente
     document.getElementById('password').innerHTML = password;
 }
 
 else {
+    // modifico l'html indicando all'utente di inserire i dati
     document.getElementById('password').innerHTML = "Ricaricare la pagina ed inserisci i dati richiesti";
 }
